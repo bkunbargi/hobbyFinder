@@ -1,0 +1,6 @@
+<div class = 'landing-page-container'>
+    <app-activity-form (loading)="loading = $event" (results)="updateResults($event)"></app-activity-form>
+    <div class = 'result-container'>
+        <app-search-result class = 'video-result' *ngFor="let result of results" [result]="result"></app-search-result>
+    </div>
+</div>

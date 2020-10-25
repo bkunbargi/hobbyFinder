@@ -1,0 +1,35 @@
+.page-center{
+    display: flex; 
+    flex-direction: column;
+    justify-content:center; 
+    align-items:center;
+    text-align: center;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  top:25%;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.option-selector {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+
+.option-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}

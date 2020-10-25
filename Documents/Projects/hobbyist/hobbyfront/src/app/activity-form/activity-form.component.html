@@ -1,0 +1,104 @@
+<div class="container">
+  <div class="page-center">
+    <h3>Activity Form</h3>
+    <form [formGroup]="activityForm" (ngSubmit)="onFormSubmit()">
+      <div class = 'option-wrap'>
+        <div class = 'option-selector'>
+          <label>Indoor </label>
+          <select id="dateactivity" formControlName="Indoor">
+            <option value=""></option>
+            <option value="1">Include</option>
+            <option value="0">Exclude</option>
+          </select>
+      </div>
+      <div class = 'option-selector'>
+        <label>Outdoor </label>
+        <select id="dateactivity" formControlName="Outdoor">
+          <option value=""></option>
+          <option value="1">Include</option>
+          <option value="0">Exclude</option>
+        </select>
+    </div>
+    <div class = 'option-selector'>
+      <label>Day </label>
+      <select id="dateactivity" formControlName="Day">
+        <option value=""></option>
+        <option value="1">Include</option>
+        <option value="0">Exclude</option>
+      </select>
+  </div>
+  <div class = 'option-selector'>
+    <label>Night </label>
+    <select id="dateactivity" formControlName="Night">
+      <option value=""></option>
+      <option value="1">Include</option>
+      <option value="0">Exclude</option>
+    </select>
+  </div>
+  <div class = 'option-selector'>
+    <label>Date </label>
+    <select id="dateactivity" formControlName="Date">
+      <option value=""></option>
+      <option value="1">Include</option>
+      <option value="0">Exclude</option>
+    </select>
+  </div>
+</div>
+<div class = 'option-wrap'>
+  <button type="button" (click)="setDefaultValues()">Set Default</button>
+  <button>Submit</button>
+  <button type="button" (click)="reset()">Reset</button>
+</div>
+
+      <!-- <table>
+      <tr> 
+        <td>Indoor / Outdoor</td>
+          <td>
+            <select id="dateactivity" formControlName="Indoor">
+              <option value=""></option>
+              <option value="1">Include</option>
+              <option value="0">Exclude</option>
+            </select>
+            <select id="dateactivity" formControlName="Outdoor">
+              <option value="1">Include</option>
+              <option value="0">Exclude</option>
+          </select>
+          </td>
+      </tr> 
+      <tr>
+            <td>Day / Night </td>
+            <td>
+              <select id="dateactivity" formControlName="Day">
+                <option value="1">Include</option>
+                <option value="0">Exclude</option>
+              </select>
+              <select id="dateactivity" formControlName="Night">
+                <option value="1">Include</option>
+                <option value="0">Exclude</option>
+            </select>
+            </td>
+      </tr>	  
+      <tr>
+        <td>Date Activity </td>
+        <td>
+            <select id="dateactivity" formControlName="Date">
+                <option value="1">Include</option>
+                <option value="0">Exclude</option>
+            </select>
+          </td>
+      </tr>	 
+      <tr> 	  
+        <td colspan="2">
+            <button>Submit</button>
+          <button type="button" (click)="setDefaultValues()">Set Default</button>
+          <button type="button" (click)="reset()">Reset</button>		  
+        </td>
+      </tr>	   
+      </table>   -->
+    </form> 
+    <div *ngIf="hobbyResult">
+      <h2> {{hobbyResult}} </h2>
+    </div>
+  </div>
+</div>
+
